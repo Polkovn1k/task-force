@@ -1,0 +1,14 @@
+{
+    "name": "wa0s/task-force",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Polkovn1k"
+        }
+    ],
+    "require": {}
+}

@@ -1,5 +1,8 @@
 <?php
-class Task {
+
+namespace App\Classes;
+
+class TaskAction {
     const STATUS_NEW = 'new';
     const STATUS_IN_PROGRESS = 'in_progress';
     const STATUS_CANCELED = 'canceled';
@@ -72,9 +75,9 @@ class Task {
      */
     public function setStatus(string $status): void
     {
-        $allStatuses = $this->getStatusesMap();
+        $allStatusesKeys = array_keys($this->getStatusesMap());
 
-        if (in_array($status, $allStatuses)) {
+        if (in_array($status, $allStatusesKeys)) {
             $this->currentStatus = $status;
         }
     }
